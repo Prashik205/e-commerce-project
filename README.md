@@ -2,6 +2,11 @@
 
 A comprehensive e-commerce platform featuring a Spring Boot backend and a React/Vite frontend.
 
+## 📸 Screenshots
+| Home Page | Shop Page | Login Page |
+| :---: | :---: | :---: |
+| ![Home](screenshots/home.png) | ![Shop](screenshots/shop.png) | ![Login](screenshots/login.png) |
+
 ## 🚀 Features
 - **User Authentication**: Secure login and registration.
 - **Product Management**: Browse, search, and view product details.
