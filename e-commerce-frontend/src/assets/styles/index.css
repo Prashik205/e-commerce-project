@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  /* Amazon-like Professional Palette */
+  --color-primary: #131921;
+  /* Dark Blue Header Background */
+  --color-primary-hover: #232f3e;
+  /* Slightly lighter header for hover */
+
+  --color-secondary: #f3f3f3;
+  /* Light Gray Background (Amazon Style) */
+  --color-surface: #ffffff;
+  /* White Cards */
+
+  --color-accent: #febd69;
+  /* Amazon Yellow/Orange for Buttons */
+  --color-accent-hover: #f0c14b;
+  /* Slightly darker/gradient for hover */
+
+  --color-text-main: #111827;
+  /* Near Black for Readability */
+  --color-text-muted: #565959;
+  /* Gray for secondary text */
+  --color-text-light: #ffffff;
+  /* White Text (used on dark header) */
+
+  --color-border: #d5d9d9;
+  /* Light border color */
+  --color-success: #067d62;
+  /* Green for success/stock */
+  --color-error: #b12704;
+  /* Red for errors/alerts */
+
+  /* Shadows (Subtle, not glassmorphism) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Font Families */
+  --font-heading: 'Poppins', sans-serif;
+  /* Keep modern font but use it sparingly */
+  --font-body: 'Inter', sans-serif;
+  /* Clean, readable body font */
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Poppins", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-background: var(--color-secondary);
+  --color-surface: var(--color-surface);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-light: var(--color-text-light);
+
+  --color-border: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  /* Light gray background */
+  color: var(--color-text-main);
+  /* Dark text */
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+  /* Slightly tighter for headings */
+  color: #0f1111;
+  /* Almost pure black for headings */
+}
+
+/* Amazon-style Card Utility using @apply-like approach or standard CSS */
+.product-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  /* Slightly rounded, almost sharp */
+  padding: 1rem;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #111827;
+  /* Dark text on yellow button */
+  border: 1px solid #a88734;
+  /* Border for definition */
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Navbar Utility */
+.navbar-brand {
+  color: var(--color-text-light);
+  /* White text on dark header */
+}
+
+/* Scrollbar Styling - Thinner and less obtrusive */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

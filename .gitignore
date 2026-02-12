@@ -1,0 +1,43 @@
+# Root .gitignore for e-commerce project
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+.sts4-cache
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Backend
+e-commerce-backend/target/
+e-commerce-backend/.mvn/wrapper/maven-wrapper.jar
+e-commerce-backend/build_log*.txt
+e-commerce-backend/run_log*.txt
+
+# Frontend
+e-commerce-frontend/node_modules/
+e-commerce-frontend/dist/
+e-commerce-frontend/dist-ssr/
+e-commerce-frontend/logs/
+e-commerce-frontend/*.log
+e-commerce-frontend/npm-debug.log*
+e-commerce-frontend/yarn-debug.log*
+e-commerce-frontend/yarn-error.log*
+e-commerce-frontend/pnpm-debug.log*
+e-commerce-frontend/lerna-debug.log*
+e-commerce-frontend/*.local
+
+# Root level
+target/
+*.sql
+*.pdf
