@@ -3,9 +3,21 @@
 A comprehensive e-commerce platform featuring a Spring Boot backend and a React/Vite frontend.
 
 ## 📸 Screenshots
-| Home Page | Shop Page | Login Page |
-| :---: | :---: | :---: |
-| ![Home](screenshots/home.png) | ![Shop](screenshots/shop.png) | ![Login](screenshots/login.png) |
+
+### Home & Navigation
+| Home (Hero) | Home (Features) | Home (Products) | Footer |
+| :---: | :---: | :---: | :---: |
+| ![Home 1](screenshots/home1.png) | ![Home 2](screenshots/home2.png) | ![Home 3](screenshots/home3.png) | ![Footer](screenshots/footer.png) |
+
+### Shopping Experience
+| Product Detail | Shopping Cart | Checkout | Order Confirmation |
+| :---: | :---: | :---: | :---: |
+| ![Product](screenshots/product.png) | ![Cart](screenshots/cart.png) | ![Place Order](screenshots/placeorder.png) | ![Order History](screenshots/orderhistory.png) |
+
+### User Authentication
+| Sign In | Sign Up |
+| :---: | :---: |
+| ![Sign In](screenshots/signin.png) | ![Sign Up](screenshots/signup.png) |
 
 ## 🚀 Features
 - **User Authentication**: Secure login and registration.
