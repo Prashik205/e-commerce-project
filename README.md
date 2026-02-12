@@ -3,7 +3,6 @@
 A comprehensive e-commerce platform featuring a Spring Boot backend and a React/Vite frontend.
 
 ## 📸 Screenshots
-
 ### Home & Navigation
 | Home (Hero) | Home (Features) | Home (Products) | Footer |
 | :---: | :---: | :---: | :---: |
